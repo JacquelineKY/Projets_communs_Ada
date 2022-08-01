@@ -1,0 +1,7 @@
+{
+    "lundi":["satisfait"],
+    "mardi":["content"],
+    "mercredi":["neutre"],
+    "jeudi":["content", "fatigué"],
+    "vendredi":["festif"]
+}

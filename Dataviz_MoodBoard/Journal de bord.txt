@@ -1,0 +1,50 @@
+Jour 1 :
+Brain storming, intégration d'une horloge, test css, conception du goole form par Marine sur les émotions avec envoi à la promo; recherche et documentation sur API google par Marine
+
+Jour 2 :
+recherche lien avec API et test sur API pour voir le fonctionnement, test CSS par Melisande (changement couleur via bouton) ; recherche et documentation sur API google par Marine
+
+Jour 3 :
+confrontation et déception API google (documentations trop récentes car API disponible depuis très peu de temps, problème de clé : système sécurité google rend API non exploitable, on n'a pas réussi à lier la clé qu'on créer à l'API)
+On se décide à passer sur une autre API disponible en ligne (idée super-héro, mème)
+Finalement, Laure nous indique qu'on peut exploiter nos stats en écrivant à la main le fichier JSON
+
+Jour 4 : 
+création du fichier JSON : tableau de sondage des humeurs retranscrit à la main
+2 méthodes pour lier JSON à JS : parse et stringify ; 
+
+//methode parse qui fonctionne en interne de JS => utilise du string au départ dans ce cas
+let myJSON = '{"lundi":"satisfait", "mardi":"content","mercredi":"neutre","jeudi":["content", "fatigué"],"vendredi":"festif"}';
+
+let myNewJSON = JSON.parse(myJSON);
+console.log(myNewJSON.lundi); //
+
+//methode stringyfy qui fonctionne en interne de JS => utilise des array au départ dans ce cas
+let myJSON = {
+    "lundi":["satisfait"],
+    "mardi":["content"],
+    "mercredi":["neutre"],
+    "jeudi":["content", "fatigué"],
+    "vendredi":["festif"]
+};
+
+//let myNewJSON = JSON.stringify(myJSON,null, '\t');
+
+console.log(myJSON.jeudi);*/
+
+jour 5 : 
+5 API trouvé : citation, une citation par jour ; pb la stocker dans le javascript
+faire animation pour jour de la semaine
+couleur à choisir pour jour
+graphisme sur chaque page : créer son propre mème, lié à la citation 
+tout en dynamique : transformer en menu ou en timer 
+CSS sur la police
+
+
+Pour jeudi 31/03
+repasser menu à la vertical en burger
+finaliser les couleurs (fond de page)
+redimensionner les mèmes, page en entier
+rendre responsive 
+animation "éclatement" au chargement de la page
+
